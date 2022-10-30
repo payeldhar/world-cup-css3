@@ -1,0 +1,169 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:ital,wght@0,700;1,200;1,500&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container{
+    width:80%;
+    margin-top: 21px;
+    padding: 30px;
+}
+.hero{
+   
+    background-color: black;
+    width: 80%;
+    height: 800px;
+    display: flex;
+    border-radius: 25px;
+   justify-content: center;
+   padding: 10px 40px;
+   
+   margin-left: 50px;
+  
+   
+}
+.content{
+    color: aliceblue;
+   padding-left: 10px;
+   margin-top: 10%;
+}
+.content p{
+    margin-bottom: 10px 30px;
+    font-size: 14px;
+}
+.content h1{
+    font-size: 50px;
+    bottom: 15px;
+}
+.link-botton{
+    text-decoration: none;
+    background-image: linear-gradient(red, tomato);
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: beige;
+   font-weight: 700;
+}
+.items{
+     width: 252px;
+height: 252px;
+left: 170px;
+top: 856px;
+ background-color: black;
+}
+.info a {
+    display:grid;
+    text-decoration: none;
+    padding: 10px 5px;
+   
+    color: black;
+    padding: 10px 10px;
+
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.nothing{
+    background-image: linear-gradient(white, whitesmoke);
+   padding-right: 5px;
+   padding-left: 5px;
+   margin-left: 20px;
+   margin-right: 20px;
+   border-radius: 5px;
+  
+}
+.everything{
+    background-image: linear-gradient(red, tomato);
+    padding-right: 5px;
+   padding-left: 5px;
+   margin-left: 20px;
+   margin-right: 20px;
+   border-radius: 5px;
+}
+/* players style */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-column-gap: 15px;
+}
+.course .course-banner img{
+    width: 312px;
+height: 175px;
+}
+.course-inpo{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+}
+.course{
+    width: 312px;
+    border: 1px solid white;
+  padding: 10px;
+  box-shadow: 5px 10px whitesmoke;
+  
+}
+.footer-container{
+    background-color: black;
+    padding-bottom:10%;
+   width: 100%; 
+}
+
+.footer{
+    width: 80%;
+    height: 40vh;
+    display:inline;
+    justify-items: center;
+}
+hr{
+    margin-top: 20px;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    color: azure;
+    justify-items: center;
+}
+.footer-heading a{
+    text-decoration: none;
+    color: beige;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+/* media quries */
+/* movie device */
+@media only screen and (max-width:668px) {
+    .container{
+        width: 100%;
+    }
+    .hara, .items, .courses,  .footer-heading {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hero, .items, .courses {
+        flex-direction: column;
+       justify-items: center;
+    }
+}
+/* taplet device */
+@media only screen and  (min-width:668px) and  (max-width:992px){
+    .container{
+              width: 100%;
+    }
+    .items, .courses,  .footer-heading  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .items{
+        display: inline;
+     }
+     .footer-container a{
+        display:list-item;
+     }
+     
+}
